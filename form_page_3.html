@@ -1,0 +1,63 @@
+<html>
+    <head>
+     <title>Forms</title>
+    </head>
+    <body>
+    <table border="2">
+        <tr>
+            <td bgcolor="Green">Step 1: Account</td>
+            <td bgcolor="Green"> Step 2: Personal Details</td>
+            <td bgcolor="PowderBlue"> Step 3: Your Review</td>
+        </tr>
+    </table>
+    <br /><br />
+     <form action="http://www.example.com/review.php" method="get">
+      <fieldset>
+       <legend>
+        <h2>Your Review</h2>
+       </legend>
+       <label>
+        <b>How did you hear about us?</b> 
+        <select name="hear_about_us" placeholder="Select Your Opinion">
+            <option value="fb">Facebook</option>
+            <option value="insta">Instagram</option>
+            <option value="tiktok">TikTok</option>
+            <option value="youtube">Youtube</option>
+            <option value="friend">Through a friend</option>
+            <option value="event">Through an event</option>
+        </select>
+       </label>
+       <br /><br />
+       <label>
+        <b>Would you visit again?</b><br />
+        <input type="radio" name="visit" value="yes"/> Yes
+        <input type="radio" name="visit" value="no" /> No
+        <input type="radio" name="visit" value="maybe" /> Maybe 
+        </label>
+       <br /><br />
+       <label>
+        <b>Comments:</b><br />
+        <textarea name="comments" cols="50" rows="10">Enter your comments here...</textarea>
+       </label>
+       <br /><br />
+       <label>
+        <b>Documents:</b><br />
+        <input type="file" name="choose_file" /><br /><br />
+       </label>
+       <label>
+        <input type="checkbox" name="future_updates" value="future_updates" /> Sign me up for future updates<br />
+       </label>
+       <figure>
+        <a href="form_page_2.html">
+        <img src="back_button.png" width="90px">
+        </a>
+        <a href="form_page_final.html">
+        <img src="front_button.png" width="90px">
+        </a>
+      </figure>
+      </fieldset>
+     </form>
+    </body>
+    </html>
+   
+   
